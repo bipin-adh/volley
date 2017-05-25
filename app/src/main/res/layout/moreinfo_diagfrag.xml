@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    
+    <FrameLayout
+        android:id="@+id/dialog_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/dialog_backdrop_image"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/custom_dialog_gradient"
+            android:src="@drawable/custom_dialog_gradient"
+            />
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/dialog_poster_image"
+            android:gravity="start"
+            android:alpha="0.8"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_4dp"
+            android:layout_marginBottom="@dimen/spacing_2dp"
+            android:layout_marginLeft="@dimen/spacing_4dp"
+            android:layout_marginTop="@dimen/spacing_2dp"
+            android:layout_marginRight="@dimen/spacing_4dp"
+            >
+
+
+        <TextView
+            android:id="@+id/dialogtextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginBottom="@dimen/spacing_4dp"
+            android:layout_marginLeft="@dimen/spacing_4dp"
+            android:layout_marginTop="@dimen/spacing_2dp"
+            android:padding="@dimen/spacing_2dp"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+
+            />
+
+
+    <TextView
+        android:id="@+id/dialogtextViewDateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialogTextViewDate"
+        android:textSize="15sp"
+        android:layout_marginBottom="@dimen/spacing_4dp"
+        android:layout_marginLeft="@dimen/spacing_2dp"
+        android:layout_marginTop="@dimen/spacing_4dp"
+        android:padding="@dimen/spacing_4dp"
+        android:layout_below="@+id/dialogtextViewTitle"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+
+    <TextView
+            android:id="@+id/dialogtextViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:layout_marginBottom="@dimen/spacing_4dp"
+            android:layout_marginLeft="@dimen/spacing_2dp"
+            android:layout_marginTop="@dimen/spacing_2dp"
+            android:padding="@dimen/spacing_4dp"
+            android:layout_below="@+id/dialogtextViewDateTitle"
+            android:layout_alignParentEnd="true"
+        />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_alignParentRight="true"
+            android:id="@+id/dialogRatingBar"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:layout_below="@+id/dialogtextViewDate"
+            android:theme="@style/RatingBar"
+        />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/dialogtextViewOverviewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textviewOverview"
+        android:textSize="15sp"
+        android:layout_marginBottom="@dimen/spacing_4dp"
+        android:layout_marginLeft="@dimen/spacing_4dp"
+        android:layout_marginStart="@dimen/spacing_4dp"
+        android:layout_marginTop="@dimen/spacing_4dp"
+        android:padding="@dimen/spacing_4dp"
+        android:textColor="@color/nearlyWhite"
+        android:layout_below="@+id/dialog_frame"
+
+        />
+
+    <TextView
+        android:id="@+id/dialogtextViewOverview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15sp"
+        android:layout_marginBottom="@dimen/spacing_4dp"
+        android:layout_marginLeft="@dimen/spacing_2dp"
+        android:layout_marginStart="@dimen/spacing_2dp"
+        android:layout_marginTop="@dimen/spacing_4dp"
+        android:padding="@dimen/spacing_4dp"
+        android:layout_below="@+id/dialogtextViewOverviewHeading"
+
+        />
+
+
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dismissBtn"
+            android:text="@string/dialog_btn"
+            android:layout_marginBottom="@dimen/spacing_4dp"
+            android:layout_marginLeft="@dimen/spacing_2dp"
+            android:layout_marginStart="@dimen/spacing_2dp"
+            android:layout_marginTop="@dimen/spacing_4dp"
+            android:padding="@dimen/spacing_4dp"
+            android:layout_below="@+id/dialogtextViewOverview"
+            android:layout_gravity="bottom"
+            />
+
+    </RelativeLayout>
+

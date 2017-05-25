@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d2b2b</color>
+    <color name="colorPrimaryDark">#3A4246</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="nearlyWhite">#FFEBEE</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="statusBarColor">#000000</color>
+    <color name="appBarColor">#212121</color>
+    <color name="backgroundColor">#303030</color>
+
+    <color name="dialog_CardsColor">#424242</color>
+
+    <color name="gradient_start">#303030</color>
+    <color name="gradient_mid">#212121</color>
+    <color name="gradient_end">#000000</color>
+
+
+
+
+    <color name="textColor">#332f2f</color>
+    <color name="duskYellow">#ECB028</color>
+    <color name="lightGrey">#D3D3D3</color>
+</resources>

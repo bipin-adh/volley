@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_3d4f566ad08aa8c4c392bbaaa6f8676c299ea255.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/com.android.volley-volley-1.0.0_051421e96fc84b5f8c1fd74c3de52747793c8be5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_1ee74961af9a1f3f82b4fd0199ab45365ad609b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_337b04573b55039dee0b7f77c03f3ed919e71c9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_6642674fda31424a2438976339383b77d5b99cfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.1.0_3fe6e58e08e630371ad31c697517dcbf9b06dd83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_3c266e501babe82a5a17174617ad387b5aa43db1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-21.0.3_e97cd085e72161fdbf24bd697e7b3e38c25b3905.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_18ac869fd994f1a95765129d99e8daaac6fbacb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/universal-image-loader-1.9.5_471c04796bec279ca88446c5f74f481a38b5d87e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/bpn-adh/Downloads/android-studio/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/home/bpn-adh/AndroidStudioProjects/VolleyDemo/app/build/intermediates/pre-dexed/debug/gson-2.2.4_5c265b36182f8e51915cdd85c80e8c0bbb9230fd.jar" />
+    </item>
+
+</items>

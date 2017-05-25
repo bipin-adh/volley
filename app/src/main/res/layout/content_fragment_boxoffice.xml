@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@color/backgroundColor"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        style="@style/MyCardViewStyle"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/spacing_2dp"
+            android:layout_marginLeft="@dimen/spacing_4dp"
+            android:layout_marginStart="@dimen/spacing_4dp"
+            android:layout_marginTop="@dimen/spacing_2dp"
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/poster_image"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/nearlyWhite"
+                android:layout_alignStart="@id/cardViewList"
+                android:layout_marginLeft="@dimen/spacing_4dp"
+                android:layout_marginTop="@dimen/spacing_4dp"
+                android:layout_marginBottom="@dimen/spacing_4dp"
+
+                />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:layout_marginBottom="@dimen/spacing_4dp"
+                android:layout_marginLeft="@dimen/spacing_2dp"
+                android:layout_marginStart="@dimen/spacing_2dp"
+                android:layout_marginTop="@dimen/spacing_4dp"
+                android:padding="@dimen/spacing_4dp"
+                android:textColor="@color/nearlyWhite"
+                android:layout_toRightOf="@+id/poster_image"
+                />
+            <TextView
+                android:id="@+id/textViewReleaseDateHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="@string/releaseDateHeading"
+                android:layout_marginBottom="@dimen/spacing_4dp"
+                android:layout_marginLeft="@dimen/spacing_4dp"
+                android:layout_marginStart="@dimen/spacing_4dp"
+                android:layout_marginTop="@dimen/spacing_4dp"
+                android:padding="@dimen/spacing_4dp"
+                android:layout_below="@id/textViewTitle"
+                android:gravity="start"
+                android:textColor="@color/nearlyWhite"
+                android:layout_toRightOf="@+id/poster_image"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="@dimen/spacing_4dp"
+                android:layout_marginLeft="@dimen/spacing_4dp"
+                android:layout_marginStart="@dimen/spacing_4dp"
+                android:layout_marginTop="@dimen/spacing_4dp"
+                android:padding="@dimen/spacing_4dp"
+                android:layout_below="@+id/textViewTitle"
+                android:layout_toRightOf="@+id/textViewReleaseDateHeading"
+                android:textColor="@color/nearlyWhite"
+                />
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:id="@+id/cardViewRatingBar"
+                android:layout_marginLeft="@dimen/spacing_4dp"
+                android:layout_marginStart="@dimen/spacing_4dp"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:isIndicator="true"
+                android:layout_below="@+id/textViewReleaseDateHeading"
+                android:theme="@style/RatingBar"
+                />
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

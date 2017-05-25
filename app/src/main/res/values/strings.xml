@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Volley Demo</string>
+    <string name="textviewOverview"><u>Overview</u></string>
+    <string name="dialog_btn">Back</string>
+    <string name="dialogTextViewDate">Release Date :</string>
+    <string name="releaseDateHeading">Release Date :</string>
+
+
+    <string-array name="tab_titles">
+        <item>Top Movies</item>
+        <item>Box Office</item>
+    </string-array>
+</resources>
