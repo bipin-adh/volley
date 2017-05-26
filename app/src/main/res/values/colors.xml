@@ -15,9 +15,9 @@
 
     <color name="dialog_CardsColor">#424242</color>
 
-    <color name="gradient_start">#303030</color>
-    <color name="gradient_mid">#212121</color>
-    <color name="gradient_end">#000000</color>
+    <color name="gradient_start">#ab47bc</color>
+    <color name="gradient_mid">#80ab47bc</color>
+    <color name="gradient_end">#64ab47bc</color>
 
 
 

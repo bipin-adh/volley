@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
@@ -133,7 +134,7 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
+        getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         Log.d(TAG, "onCreateView: oncreate view dialog frag after first run");
         View rootView = inflater.inflate(R.layout.moreinfo_diagfrag, null);
 
