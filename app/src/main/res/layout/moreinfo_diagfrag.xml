@@ -15,9 +15,8 @@
             android:id="@+id/dialog_backdrop_image"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:background="@drawable/custom_dialog_gradient"
             android:scaleType="fitXY"
-            android:src="@drawable/custom_dialog_gradient" />
+             />
 
         <ImageView
             android:id="@+id/dialog_backdrop_overlay"
@@ -40,6 +39,7 @@
 
             <ImageView
                 android:id="@+id/dialog_poster_image"
+                android:src="@drawable/default_poster"
                 android:layout_width="100dp"
                 android:layout_height="136dp"
                 android:layout_marginRight="4dp"

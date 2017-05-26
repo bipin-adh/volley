@@ -38,6 +38,7 @@
                 android:layout_marginLeft="@dimen/spacing_4dp"
                 android:layout_marginTop="@dimen/spacing_4dp"
                 android:layout_marginBottom="@dimen/spacing_4dp"
+                android:src="@drawable/default_poster"
 
                 />
 

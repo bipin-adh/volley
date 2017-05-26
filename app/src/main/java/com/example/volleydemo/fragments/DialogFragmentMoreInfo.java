@@ -64,9 +64,10 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
     public DialogFragmentMoreInfo(Context context){
 
         options = new DisplayImageOptions.Builder()
-                .showImageOnLoading(R.drawable.ic_autorenew_black_24dp) // resource or drawable
-                .showImageForEmptyUri(R.drawable.ic_empty_24dp) // resource or drawable
-                .showImageOnFail(R.drawable.ic_image_on_fail_24dp).build();
+                .showImageOnLoading(null) // resource or drawable
+                .showImageForEmptyUri(null) // resource or drawable
+                .showImageOnFail(null)
+                .cacheOnDisk(true).build();
         imageLoader = ImageLoader.getInstance();
         imageLoader.init(ImageLoaderConfiguration.createDefault(context));
 
