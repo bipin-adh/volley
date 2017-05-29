@@ -50,8 +50,11 @@
                 android:id="@+id/dialogtextViewTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/spacing_2dp"
                 android:layout_toRightOf="@+id/dialog_poster_image"
+                android:layout_marginBottom="@dimen/spacing_2dp"
+                android:layout_marginTop="@dimen/spacing_2dp"
+                android:layout_marginLeft="@dimen/spacing_4dp"
+                android:textStyle="bold"
                 android:padding="@dimen/spacing_2dp"
                 android:textColor="@color/white"
                 android:textSize="15sp"
@@ -65,8 +68,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/dialogtextViewTitle"
                 android:layout_toRightOf="@+id/dialog_poster_image"
+                android:layout_marginBottom="@dimen/spacing_2dp"
+                android:layout_marginTop="@dimen/spacing_2dp"
+                android:layout_marginLeft="@dimen/spacing_4dp"
                 android:padding="@dimen/spacing_4dp"
                 android:text="@string/dialogTextViewDate"
+                android:textStyle="italic"
                 android:textSize="15sp" />
 
 
@@ -75,11 +82,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/dialogtextViewDateTitle"
-                android:layout_marginBottom="@dimen/spacing_4dp"
-                android:layout_marginTop="@dimen/spacing_4dp"
+                android:layout_marginBottom="@dimen/spacing_2dp"
+                android:layout_marginTop="@dimen/spacing_2dp"
+                android:layout_marginLeft="@dimen/spacing_4dp"
                 android:layout_toEndOf="@+id/dialog_poster_image"
                 android:padding="@dimen/spacing_4dp"
                 android:text=""
+                android:textStyle="italic"
                 android:textSize="15sp" />
 
             <RatingBar
@@ -90,8 +99,10 @@
                 android:layout_below="@+id/dialogtextViewDate"
                 android:layout_toEndOf="@+id/dialog_poster_image"
                 android:isIndicator="true"
+                android:padding="@dimen/spacing_2dp"
                 android:numStars="5"
-                android:stepSize="0.5"
+                android:stepSize="0.4"
+                android:progressTint="@color/duskYellow"
                 android:theme="@style/RatingBar" />
 
         </RelativeLayout>
@@ -99,8 +110,9 @@
 
     </FrameLayout>
 
+
     <TextView
-        android:id="@+id/dialogtextViewOverviewHeading"
+        android:id="@+id/dialogtextViewOverview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dialog_frame"
@@ -109,25 +121,9 @@
         android:layout_marginStart="@dimen/spacing_4dp"
         android:layout_marginTop="@dimen/spacing_4dp"
         android:padding="@dimen/spacing_4dp"
-        android:text="@string/textviewOverview"
-        android:textColor="@color/nearlyWhite"
-        android:textSize="15sp"
-
-        />
-
-    <TextView
-        android:id="@+id/dialogtextViewOverview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dialogtextViewOverviewHeading"
-        android:layout_marginBottom="@dimen/spacing_4dp"
-        android:layout_marginLeft="@dimen/spacing_2dp"
-        android:layout_marginStart="@dimen/spacing_2dp"
-        android:layout_marginTop="@dimen/spacing_4dp"
-        android:padding="@dimen/spacing_4dp"
         android:text=""
         android:textSize="15sp"
-
+        android:textStyle="italic"
         />
 
 
@@ -138,8 +134,8 @@
         android:layout_below="@+id/dialogtextViewOverview"
         android:layout_gravity="bottom"
         android:layout_marginBottom="@dimen/spacing_4dp"
-        android:layout_marginLeft="@dimen/spacing_2dp"
-        android:layout_marginStart="@dimen/spacing_2dp"
+        android:layout_marginLeft="@dimen/spacing_4dp"
+        android:layout_marginStart="@dimen/spacing_4dp"
         android:layout_marginTop="@dimen/spacing_4dp"
         android:padding="@dimen/spacing_4dp"
         android:text="@string/dialog_btn" />

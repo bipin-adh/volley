@@ -1,9 +1,7 @@
 package com.example.volleydemo.fragments;
 
 
-import android.app.Application;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import com.google.gson.Gson;
@@ -41,7 +39,6 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.List;
 
 
 import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.*;
@@ -51,8 +48,8 @@ public class BoxOfficeFragment extends Fragment implements BoxOfficeAdapter.OnMo
 
     public static final String TAG = BoxOfficeFragment.class.getSimpleName();
 
-    public static final String URL_THEMOVIEDB = "https://api.themoviedb.org/3/movie/popular";
-    public static final String url = "https://api.themoviedb.org/3/movie/popular?api_key=9da795673e6721fb2225506edd8d78f5";
+    public static final String BASEURL_THEMOVIEDB = "https://api.themoviedb.org/3/movie/popular";
+    //public static final String url = "https://api.themoviedb.org/3/movie/popular?api_key=9da795673e6721fb2225506edd8d78f5";
     public static final String MOVIE_ARGS = "my_movie";
 
     private VolleySingleton volleySingleton;
@@ -219,7 +216,7 @@ public class BoxOfficeFragment extends Fragment implements BoxOfficeAdapter.OnMo
 
     public static String getRequestUrl(int limit){
 
-        return URL_THEMOVIEDB+"?api_key="+ MyApplication.API_KEY_THEMOVIEDB+"&limit="+limit;
+        return BASEURL_THEMOVIEDB +"?api_key="+ MyApplication.API_KEY_THEMOVIEDB+"&limit="+limit;
 
     }
 

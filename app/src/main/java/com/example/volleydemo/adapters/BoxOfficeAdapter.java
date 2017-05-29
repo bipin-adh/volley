@@ -13,7 +13,6 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.volleydemo.R;
-import com.example.volleydemo.fragments.DialogFragmentMoreInfo;
 import com.example.volleydemo.model.Movie;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -50,7 +49,8 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
         options = new DisplayImageOptions.Builder()
                 .showImageOnLoading(null) // resource or drawable
                 .showImageForEmptyUri(null) // resource or drawable
-                .showImageOnFail(null).build();
+                .showImageOnFail(null)
+                .cacheOnDisk(true).build();
         imageLoader = ImageLoader.getInstance();
         imageLoader.init(ImageLoaderConfiguration.createDefault(context));
 
@@ -67,7 +67,7 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
     }
 
     @Override
-    public void onBindViewHolder(MyHolder holder, int position) {
+    public void onBindViewHolder(final MyHolder holder, int position) {
 
         final Movie movie = Movielist.get(position);
 
@@ -85,7 +85,7 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
         });
 
 
-        imageLoader.displayImage(movie.getPosterUrl(),holder.poster_image, options, new ImageLoadingListener() {
+        imageLoader.displayImage(movie.getPosterUrl(), holder.poster_image, options, new ImageLoadingListener() {
             @Override
             public void onLoadingStarted(String imageUri, View view) {
 
@@ -93,6 +93,8 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
 
             @Override
             public void onLoadingFailed(String imageUri, View view, FailReason failReason) {
+
+                holder.poster_image.setImageResource(R.drawable.default_poster);
 
             }
 

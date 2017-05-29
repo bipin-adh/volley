@@ -1,20 +1,28 @@
 package com.example.volleydemo.model;
 
+
 import com.example.volleydemo.MyApplication;
+import com.google.gson.annotations.SerializedName;
 
+public class TopMovie {
 
-
-
-public class Movie {
-
+    @SerializedName("id")
     private String id;
+    @SerializedName("original_title")
     private String title;
+    @SerializedName("overview")
     private String overview;
+    @SerializedName("release_date")
     private String releaseDate;
+    @SerializedName("genre_ids")
     private String genreId;
+    @SerializedName("poster_path")
     private String posterUrl;
+    @SerializedName("vote_average")
     private float rating;
+    @SerializedName("backdrop_path")
     private String backdropUrl;
+
 
     public void setBackdropUrl(String backdropUrl) {
         this.backdropUrl = MyApplication.backdrop_image_location+backdropUrl;
