@@ -4,6 +4,9 @@ package com.example.volleydemo.model;
 import com.example.volleydemo.MyApplication;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TopMovie {
 
     @SerializedName("id")
@@ -15,7 +18,7 @@ public class TopMovie {
     @SerializedName("release_date")
     private String releaseDate;
     @SerializedName("genre_ids")
-    private String genreId;
+    private List<Integer> genreIds = new ArrayList<Integer>();
     @SerializedName("poster_path")
     private String posterUrl;
     @SerializedName("vote_average")
@@ -58,15 +61,6 @@ public class TopMovie {
         return posterUrl;
     }
 
-    public void setGenreId(String genreId) {
-        this.genreId = genreId;
-    }
-
-    public String getGenreId() {
-        return genreId;
-    }
-
-
 
     public void setId(String id) {
         this.id = id;
@@ -74,6 +68,14 @@ public class TopMovie {
 
     public String getId() {
         return id;
+    }
+
+    public List<Integer> getGenreIds() {
+        return genreIds;
+    }
+
+    public void setGenreIds(List<Integer> genreIds) {
+        this.genreIds = genreIds;
     }
 
     public void setOverview(String overview) {

@@ -107,6 +107,7 @@ public class TopMoviesFragment extends Fragment {
 
                 Log.e(TAG,"error "+ t.toString());
             }
+
         });
 
 
