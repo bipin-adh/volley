@@ -112,6 +112,7 @@ public class TopMoviesFragment extends Fragment implements TopMoviesAdapter.OnMo
                 showProgressDialog(false,"failed to get data");
                 Log.e(TAG,"error "+ t.toString());
             }
+
         });
 
 
