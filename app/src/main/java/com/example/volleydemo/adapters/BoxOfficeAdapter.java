@@ -75,6 +75,7 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
         holder.textViewReleaseDate.setText(movie.getReleaseDate().toString());
         holder.cardViewRatingBar.setRating(movie.getRating()/2);
 
+        Log.d(TAG, "onBindViewHolder: boxoffice"+movie.getPosterUrl());
 
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +84,7 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
                 onMoreInfoClickListener.onMoreInfoClick(movie);
             }
         });
+
 
 
         imageLoader.displayImage(movie.getPosterUrl(), holder.poster_image, options, new ImageLoadingListener() {
@@ -109,6 +111,7 @@ public class BoxOfficeAdapter extends RecyclerView.Adapter<BoxOfficeAdapter.MyHo
             @Override
             public void onLoadingCancelled(String imageUri, View view) {
 
+                holder.poster_image.setImageResource(R.drawable.default_poster);
             }
         });
 

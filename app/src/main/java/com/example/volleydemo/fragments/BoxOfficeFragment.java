@@ -4,9 +4,6 @@ package com.example.volleydemo.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import com.google.gson.Gson;
-
-
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -14,10 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
-import com.example.volleydemo.adapters.BoxOfficeAdapter;
-import com.example.volleydemo.model.Movie;
-
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -27,30 +20,33 @@ import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.example.volleydemo.MyApplication;
 import com.example.volleydemo.R;
+import com.example.volleydemo.adapters.BoxOfficeAdapter;
+import com.example.volleydemo.model.Movie;
 import com.example.volleydemo.networks.VolleySingleton;
-
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-
-import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.*;
+import static com.example.volleydemo.extras.Constants.BASEURL_THEMOVIEDB;
+import static com.example.volleydemo.extras.Constants.MOVIE_ARGS;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_BACKDROPIMAGE;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_OVERVIEW;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_RATING;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_RELEASEDATE;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_RESULTS;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_TITLE;
+import static com.example.volleydemo.extras.Keys.EndPointBoxOffice.KEY_URLPOSTER;
 
 
 public class BoxOfficeFragment extends Fragment implements BoxOfficeAdapter.OnMoreInfoClickListener{
 
     public static final String TAG = BoxOfficeFragment.class.getSimpleName();
-
-    public static final String BASEURL_THEMOVIEDB = "https://api.themoviedb.org/3/movie/popular";
-    //public static final String url = "https://api.themoviedb.org/3/movie/popular?api_key=9da795673e6721fb2225506edd8d78f5";
-    public static final String MOVIE_ARGS = "my_movie";
 
     private VolleySingleton volleySingleton;
     private ImageLoader imageLoader;

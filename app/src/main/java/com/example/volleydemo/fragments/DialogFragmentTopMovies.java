@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.example.volleydemo.R;
 import com.example.volleydemo.model.Movie;
+import com.example.volleydemo.model.TopMovie;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -30,7 +31,7 @@ import java.lang.reflect.Type;
 
 import static com.example.volleydemo.extras.Constants.MOVIE_ARGS;
 
-public class DialogFragmentMoreInfo extends DialogFragment implements View.OnClickListener{
+public class DialogFragmentTopMovies extends DialogFragment implements View.OnClickListener{
 
     public static final String TAG = DialogFragmentMoreInfo.class.getSimpleName();
 
@@ -46,7 +47,7 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
 
     RatingBar ratingBarMovieScore;
 
-    Movie movieForDialog;
+    TopMovie movieForDialog;
 
 
 
@@ -54,11 +55,11 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
     private DisplayImageOptions options;
 
 
-    public DialogFragmentMoreInfo(){
+    public DialogFragmentTopMovies(){
 
     }
 
-    public DialogFragmentMoreInfo(Context context){
+    public DialogFragmentTopMovies(Context context){
 
         options = new DisplayImageOptions.Builder()
                 .showImageOnLoading(null) // resource or drawable
@@ -104,7 +105,7 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
             jsonMovieString = getArguments().getString(MOVIE_ARGS);
         }
 
-        Type listType = new TypeToken<Movie>() {
+        Type listType = new TypeToken<TopMovie>() {
         }.getType();
 
         movieForDialog = new Gson().fromJson(jsonMovieString, listType);
@@ -125,8 +126,8 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
             Log.d(TAG, "onCreate: moviefordialog is null");
         }
         //if (getArguments() != null) {
-            //Get Data from Bundle
-       // }
+        //Get Data from Bundle
+        // }
     }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -210,10 +211,10 @@ public class DialogFragmentMoreInfo extends DialogFragment implements View.OnCli
                 dismiss();
                 break;
 
-                  }
+        }
 
 
     }
 
 
-   }
+}

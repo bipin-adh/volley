@@ -4,6 +4,7 @@
     <string name="dialog_btn">Back</string>
     <string name="dialogTextViewDate">Release Date :</string>
     <string name="releaseDateHeading">Release Date :</string>
+    <string name="progress_topmovies">Getting movies detail</string>
 
 
     <string-array name="tab_titles">

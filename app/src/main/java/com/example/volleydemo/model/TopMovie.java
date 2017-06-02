@@ -14,8 +14,6 @@ public class TopMovie {
     private String overview;
     @SerializedName("release_date")
     private String releaseDate;
-    @SerializedName("genre_ids")
-    private String genreId;
     @SerializedName("poster_path")
     private String posterUrl;
     @SerializedName("vote_average")
@@ -29,7 +27,7 @@ public class TopMovie {
     }
 
     public String getBackdropUrl() {
-        return backdropUrl;
+        return MyApplication.backdrop_image_location+backdropUrl;
     }
 
     public void setRating(float rating) {
@@ -50,21 +48,14 @@ public class TopMovie {
 
     public void setPosterUrl(String posterUrl)
     {
-        this.posterUrl = MyApplication.image_Location_url+ posterUrl;
+        this.posterUrl = MyApplication.image_Location_url+posterUrl;
     }
 
     public String getPosterUrl()
     {
-        return posterUrl;
+        return MyApplication.image_Location_url+posterUrl;
     }
 
-    public void setGenreId(String genreId) {
-        this.genreId = genreId;
-    }
-
-    public String getGenreId() {
-        return genreId;
-    }
 
 
 

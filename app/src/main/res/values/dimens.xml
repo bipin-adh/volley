@@ -6,4 +6,9 @@
     <dimen name="spacing_4dp">4dp</dimen>
     <dimen name="spacing_2dp">2dp</dimen>
     <dimen name="spacing_8dp">8dp</dimen>
+
+    <dimen name="spacing_32dp">32dp</dimen>
+
+
+    <dimen name="text_size_big">16sp</dimen>
 </resources>
